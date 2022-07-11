@@ -8,11 +8,11 @@ const post_search = require("./post/post-search");
 const user_support = require("./user/user-apply");
 
 router.get("/posts", posts.getAllCompany);
-router.patch("/post-modify/:id", post_modify.modify);
-router.delete("/post-delete/:id", post_delete.delete);
-router.get("/post-detail/:id", post_detail.companyDetail);
+router.patch("/posts/:id", post_modify.modify);
+router.delete("/posts/:id", post_delete.delete);
+router.get("/posts/detail/:id", post_detail.companyDetail);
 router.get("/search", post_search.search);
 
-router.post("/user-apply/:id/company/:employerid", user_support.apply);
+router.post("/users/:id/companies/:employerid", user_support.apply);
 
 module.exports = router;

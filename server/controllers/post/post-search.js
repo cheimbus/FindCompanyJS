@@ -1,4 +1,3 @@
-const e = require("express");
 const { post } = require("../../models");
 
 module.exports = {
