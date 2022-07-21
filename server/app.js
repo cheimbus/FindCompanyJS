@@ -1,12 +1,12 @@
 require("dotenv").config();
-
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const cookieParser = require("cookie-parser");
-const logger = require("morgan");
 const indexRouter = require("./controllers/index");
 
+/**
+ * @description @models - 시퀄라이즈 모델 전체 매핑을 위해 sync()메서드 사용
+ */
 const models = require("./models/index");
 models.sequelize
   .sync({ alter: true })
@@ -18,18 +18,15 @@ models.sequelize
     console.log(err);
   });
 
-// 미들웨어
 app.use(express.json());
-app.use(cookieParser());
-app.use(logger("dev"));
-app.use(express.urlencoded({ extended: false }));
 app.use(cors({
     origin: "*",
     credentials: true,
     methods: ["GET", "POST", "OPTION", "PUT", "DELETE", "PATCH"]
 }));
-
-// 라우터
+/**
+ * @description @indexRouter - 라우터를 한곳에 정리하였습니다.
+ */
 app.use("/", indexRouter);
 
 app.set("port", process.env.PORT || 3000);

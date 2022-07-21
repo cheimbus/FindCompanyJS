@@ -1,5 +1,8 @@
 const { post } = require("../../models");
 
+/**
+ * @description @search - 모집공고 검색하는 컨트롤러입니다.
+ */
 module.exports = {
     search: async (req, res) => {
         const query = req.query;

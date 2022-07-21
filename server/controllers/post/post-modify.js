@@ -1,8 +1,12 @@
 const { post } = require("../../models");
 
+/**
+ * @description @modify - 모집공고 수정하는 컨트롤러입니다.
+ */
 module.exports = {
     modify : async (req, res) => {
         const { id } = req.params;
+        
         const { name, country, position, tech, message, detail } = req.body;
         
         if(!id) {

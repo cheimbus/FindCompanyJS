@@ -1,8 +1,12 @@
 const { applicant } = require("../../models");
 
+/**
+ * @description @apply - 사용자가 지원하는 컨트롤러입니다.
+ */
 module.exports = {
     apply: async (req, res) => {
         const { id } = req.params;
+        
         const { employerid } = req.params;
         
         const data = await applicant.findAll({
@@ -16,7 +20,9 @@ module.exports = {
             }
             else {
               await applicant.update({ isApply : true },{ where : { user_id : result.user_id }});
+
               const successApply = { user_id : result.user_id, employer_id : employerid };
+
               res.status(201).send({ successApply, message: "지원이 완료되었습니다."})
             }
           }
