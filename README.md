@@ -65,3 +65,16 @@ npm start
 1. 계속된 런타임에러로 초기에 컴파일 에러를 잡기위해 정적타입 언어인 타입스크립트를 도입해야겠다고 생각하였습니다.
 
 ## 6. API 테스트
+> [API 문서는 여기서 확인해 주세요](https://documenter.getpostman.com/view/18430721/UzR1K2xC)
+<img width="1162" alt="스크린샷 2022-07-21 오후 8 36 47" src="https://user-images.githubusercontent.com/87293880/180205120-5fda0d93-e4d3-46fd-8e72-a757329a335f.png">
+<img width="1150" alt="스크린샷 2022-07-21 오후 8 37 02" src="https://user-images.githubusercontent.com/87293880/180205159-32be309e-770e-4104-98d1-3d801c898e27.png">
+<img width="1156" alt="스크린샷 2022-07-21 오후 8 37 14" src="https://user-images.githubusercontent.com/87293880/180204918-d291d42a-5e55-4bdc-a132-9a28b2b9565c.png">
+<img width="1156" alt="스크린샷 2022-07-21 오후 8 37 23" src="https://user-images.githubusercontent.com/87293880/180204936-556b488b-642b-4371-9040-62e9f8bc6488.png">
+<img width="1156" alt="스크린샷 2022-07-21 오후 8 37 33" src="https://user-images.githubusercontent.com/87293880/180204956-89d4b269-f475-4d2f-99db-24a1d46c7ed6.png">
+<img width="1156" alt="스크린샷 2022-07-21 오후 8 37 39" src="https://user-images.githubusercontent.com/87293880/180204966-7936a510-95b2-4e87-837c-dd8ee8351841.png">
+
+<img width="1155" alt="스크린샷 2022-07-21 오후 8 37 55" src="https://user-images.githubusercontent.com/87293880/180204972-ccd5ac8f-20f3-46f7-b11b-421ef14e24f1.png">
+
+
+
+
