@@ -43,10 +43,8 @@ npm start
 <img width="1035" height="300" alt="스크린샷 2022-07-21 오후 5 49 40" src="https://user-images.githubusercontent.com/87293880/180174458-94e35284-4e15-43a4-9f7e-34068e7c0cde.png">
 
 ## 5. 구현 목록
-* 채용공고 API
 * 채용공고, 사용자 목록 데이터생성
   * seeder를 만들어 더미데이터 생성
-* 채용공고 API
 * 채용공고 목록조회 API
   * 채용공고 전체조회 구현
   * 키워드를 검색하여 부분조회 구현
