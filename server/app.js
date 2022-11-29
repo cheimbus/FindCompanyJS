@@ -19,11 +19,13 @@ models.sequelize
   });
 
 app.use(express.json());
-app.use(cors({
+app.use(
+  cors({
     origin: "*",
     credentials: true,
-    methods: ["GET", "POST", "OPTION", "PUT", "DELETE", "PATCH"]
-}));
+    methods: ["GET", "POST", "OPTION", "PUT", "DELETE", "PATCH"],
+  })
+);
 /**
  * @description @indexRouter - 라우터를 한곳에 정리하였습니다.
  */
@@ -31,7 +33,7 @@ app.use("/", indexRouter);
 
 app.set("port", process.env.PORT || 3000);
 app.listen(app.get("port"), () => {
-    console.log(`🐥서버가 ${app.get("port")}로 열렸습니다!`)
-})
+  console.log(`🐥서버가 ${app.get("port")}로 열렸습니다!`);
+});
 
 module.exports = app;
